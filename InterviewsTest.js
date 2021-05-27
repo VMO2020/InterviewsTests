@@ -7,13 +7,14 @@ console.log('1.--------------');
 // DATA:
 const a = 50;
 const b = 50;
+console.log('Data: a: ' + a + ' b: ' + b);
 
 // EXPECTED:
 const expected = (a, b) => {
 	return a * b;
 };
 const expectedResult = expected(a, b);
-console.log('Expected: ' + expectedResult);
+console.log('Expected: ', expectedResult);
 
 // CODE:
 const multiply = (a, b) => {
@@ -28,7 +29,7 @@ const multiply = (a, b) => {
 };
 
 const multiplyResult = multiply(a, b);
-console.log('Result: ' + multiplyResult);
+console.log('Result: ', multiplyResult);
 
 // TEST:
 expectedResult === multiplyResult
@@ -41,10 +42,11 @@ console.log('2.--------------');
 
 // DATA:
 const arrayData2 = [50, -1500, 1000, 0, 1, 54];
+console.log('Data: ', arrayData2);
 
 // EXPECTED:
 const expectedResult2 = 1000;
-console.log('Expected: ' + expectedResult2);
+console.log('Expected: ', expectedResult2);
 
 //CODE:
 // The reduce() method applies a reducer function on each of the array elements and
@@ -54,7 +56,7 @@ console.log('Expected: ' + expectedResult2);
 const biggest = (arr) => arr.reduce((acc, val) => (acc > val ? acc : val));
 
 const biggestResult = biggest(arrayData2);
-console.log('Result: ' + biggestResult);
+console.log('Result: ', biggestResult);
 
 // TEST:
 expectedResult2 === biggestResult
@@ -67,10 +69,11 @@ console.log('3.--------------');
 
 // DATA:
 const arrayData3 = [1, undefined, null, 0, 2, 3];
+console.log('Data: ', arrayData3);
 
 // EXPECTED:
 const expectedResult3 = [1, 2, 3];
-console.log('Expected: ' + expectedResult3);
+console.log('Expected: ', expectedResult3);
 
 // CODE:
 const clean = (arr) =>
@@ -82,7 +85,7 @@ const clean = (arr) =>
 	}, []);
 
 const cleanResult = clean(arrayData3);
-console.log('Result: ' + cleanResult);
+console.log('Result: ', cleanResult);
 
 // TEST:
 JSON.stringify(expectedResult3) == JSON.stringify(cleanResult)
@@ -95,10 +98,11 @@ console.log('4.--------------');
 
 // DATA:
 const arrayData4 = [[1, 2], [[3, 4]], [1, []]];
+console.log('Data: ', arrayData4);
 
 // EXPECTED:
 const expectedResult4 = [1, 2, [3, 4], 1, []];
-console.log('Expected: ' + expectedResult4);
+console.log('Expected: ', expectedResult4);
 
 // CODE:
 // The concat() method merges one or more arrays and returns a merged array.
@@ -107,7 +111,7 @@ console.log('Expected: ' + expectedResult4);
 const flatten = (arr) => arr.reduce((acc, val) => acc.concat(val), []);
 
 const flattenResult = flatten(arrayData4);
-console.log('Result: ' + flattenResult);
+console.log('Result: ', flattenResult);
 
 // TEST:
 JSON.stringify(expectedResult4) == JSON.stringify(flattenResult)
