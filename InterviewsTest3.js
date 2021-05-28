@@ -5,7 +5,7 @@ console.log(`%c TEST #3`, 'font-weight:bold; font-size:24px;');
 // multiple of 5, log Buzz
 // multiple of both, log FizzBuzz
 
-for (let i = 1; i < 100; i++) {
+for (let i = 1; i <= 100; i++) {
 	let message = '';
 	if (i % 3 == 0) {
 		message += 'Fizz';
