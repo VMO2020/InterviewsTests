@@ -92,6 +92,7 @@ const cleanResult = clean(arrayData3);
 console.log('Result: ', cleanResult);
 
 // TEST:
+// Arrays cannot be compared, transform to JSON to be able to compare the Arrays
 JSON.stringify(expectedResult3) == JSON.stringify(cleanResult)
 	? console.log(`%c TEST PASS`, 'color:green; font-weight:bold;')
 	: console.log(`%c TEST FAIL`, 'color:red; font-weight:bold;');

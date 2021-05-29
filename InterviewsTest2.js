@@ -25,7 +25,7 @@ myObject.hello();
 
 // CODE:
 Object.freeze(myObject);
-myObject.name = 'Pedro';
+myObject.name = 'Pedro'; // log: Hello Alex
 myObject.hello();
 
 console.log('3.--------------');

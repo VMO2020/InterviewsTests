@@ -5,13 +5,17 @@ console.log(`%c TEST #3`, 'font-weight:bold; font-size:24px;');
 // multiple of 5, log Buzz
 // multiple of both, log FizzBuzz
 
-for (let i = 1; i <= 100; i++) {
-	let message = '';
-	if (i % 3 == 0) {
-		message += 'Fizz';
+function fizzbuzz(num) {
+	for (let i = 1; i <= num; i++) {
+		let message = '';
+		if (i % 3 == 0) {
+			message += 'Fizz';
+		}
+		if (i % 5 == 0) {
+			message += 'Buzz';
+		}
+		console.log(message ? message : i);
 	}
-	if (i % 5 == 0) {
-		message += 'Buzz';
-	}
-	console.log(message ? message : i);
 }
+
+fizzbuzz(100);
