@@ -125,7 +125,7 @@ JSON.stringify(expectedResult4) == JSON.stringify(flattenResult)
 
 console.log('5.--------------');
 
-// .- Flatten past array another level ----------------------------------------------------------
+// 5.- Flatten past array another level ----------------------------------------------------------
 
 // DATA:
 console.log('Data: ', flattenResult);

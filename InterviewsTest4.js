@@ -9,8 +9,8 @@ const str = 'alexander';
 console.log('Data: ', str);
 
 // EXPECTED:
-const expected = 'rednaxela';
-console.log('Expected: ', expected);
+const expectedTest4 = 'rednaxela';
+console.log('Expected: ', expectedTest4);
 
 //CODE:
 function reverseString(str) {
@@ -30,7 +30,7 @@ const result = reverseString(str);
 console.log('Step3 Result: ', result);
 
 //TEST:
-expected === result
+expectedTest4 === result
 	? console.log(`%c TEST PASS`, 'color:green; font-weight:bold;')
 	: console.log(`%c TEST FAIL`, 'color:red; font-weight:bold;');
 
