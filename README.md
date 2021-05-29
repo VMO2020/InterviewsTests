@@ -1,7 +1,7 @@
 # Javascript skill test Interview for Frontend Web Developer
 ## Some Javascript TEST Included
 
-USE: 
+## USE: 
 
 1.- Display index.html in your browser
 
@@ -9,7 +9,7 @@ USE:
 
 3.- Open Console to display tests
 
-TEST #1
+## TEST #1
 
 1.- Multiply two number without using "*"
 
@@ -25,7 +25,7 @@ TEST #1
 
 7.- Palindrome: Verify a word, phrase, or sequence that reads the same backwards as forwards
 
-TEST #2
+## TEST #2
 
 1.- Create an object with a "hello" method that write "Hello <name>" in the console
   
@@ -35,11 +35,11 @@ TEST #2
   
 in order from the most number of occurrences to least.
 
-TEST #3
+## TEST #3
   
 1.- FIZZBUZZ function for numbers from 1 to 100
 
-TEST #4
+## TEST #4
   
 1.- String Reverse
   
