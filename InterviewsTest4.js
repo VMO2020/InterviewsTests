@@ -82,8 +82,8 @@ console.log('Expected: ', factorialExpected);
 
 // CODE:
 function factorial(num) {
-	// If num <= 1 return 1, else if num > 1 continue the process of multiply the number
-	if (num <= 1) {
+	// If num = 0 or num = 1 return 1, else if num > 1 continue the process of multiply the number
+	if (num === 0 || num === 1) {
 		return 1; // Finish the process
 	} else {
 		return num * factorial(num - 1); // Recursive (calls itself during its execution)
@@ -97,3 +97,100 @@ console.log('Result: ', resultFactorial);
 factorialExpected === resultFactorial
 	? console.log(`%c TEST PASS`, 'color:green; font-weight:bold;')
 	: console.log(`%c TEST FAIL`, 'color:red; font-weight:bold;');
+
+console.log('4.--------------');
+
+// 4.- Find the factorial value of a number  using a "for loop"
+
+// DATA: use the same data as above
+console.log('Data: ', num);
+
+// EXPECTED: use the same data as above
+console.log('Expected: ', factorialExpected);
+
+// CODE:
+
+function factorial2(num) {
+	let total = 1;
+	console.log('Step 1: ');
+	for (let i = 0; i < num; i++) {
+		console.log(num - i);
+		// total = total * (num - i);
+		total *= num - i;
+	}
+	return total;
+}
+
+const resultFactorial2 = factorial2(num);
+console.log('Result: ', resultFactorial2);
+
+// TEST:
+factorialExpected === resultFactorial2
+	? console.log(`%c TEST PASS`, 'color:green; font-weight:bold;')
+	: console.log(`%c TEST FAIL`, 'color:red; font-weight:bold;');
+
+console.log('5.--------------');
+// 5.- Find repeated elements in an Array
+// DATA:
+const ArrayRep = [2, 4, 5, 4, 7, 9, 5];
+console.log('Data: ', ArrayRep);
+
+// EXPECTED:
+const repeatedExpected = [4, 5];
+console.log('Expected: ', repeatedExpected);
+
+//CODE:
+function findDuplicates(arr) {
+	let obj = {};
+	let duplicates = [];
+
+	for (let i = 0; i < arr.length; i++) {
+		// console.log(arr[i]);
+		// Step1: create an object with all numbers => obj[arr[i]] = 1
+		// Step2: and if it number already exist => push to the Array (duplicates)
+		obj[arr[i]] ? duplicates.push(arr[i]) : (obj[arr[i]] = 1);
+	}
+
+	console.log('Step1: ', obj);
+
+	return duplicates;
+}
+
+const repeatedResult = findDuplicates(ArrayRep);
+console.log('Result: ', repeatedResult);
+
+//TEST:
+// Arrays cannot be compared, transform to JSON to be able to compare the Arrays
+JSON.stringify(repeatedExpected) === JSON.stringify(repeatedResult)
+	? console.log(`%c TEST PASS`, 'color:green; font-weight:bold;')
+	: console.log(`%c TEST FAIL`, 'color:red; font-weight:bold;');
+
+console.log('6.--------------');
+// 6.- Find the coins needed to give change
+// DATA:
+// 25 cents coin
+// 10 cents coin
+// 5 cents coin
+// 1 cent coin
+const changeRequired = 99;
+console.log('Change for: ', changeRequired);
+
+const coins = [25, 10, 5, 1];
+console.log('Coins: ', coins);
+
+// CODE:
+function coinChange(change) {
+	let coinsObj = {};
+	let restChange = change;
+	for (let i = 0; i < coins.length; i++) {
+		// console.log(coins[i]);
+		if (Math.floor(restChange / coins[i]) > 0) {
+			coinsObj[`${coins[i]} cents`] = Math.floor(restChange / coins[i]);
+			restChange = restChange - coins[i] * Math.floor(restChange / coins[i]);
+		}
+	}
+	return coinsObj;
+}
+
+const coinResult = coinChange(changeRequired);
+console.log('Change: ', coinResult);

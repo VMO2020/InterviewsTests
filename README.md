@@ -1,7 +1,8 @@
 # Javascript skill test Interview for Frontend Web Developer
+
 ## Some Javascript TEST Included
 
-## USE: 
+## USE:
 
 1.- Display index.html in your browser
 
@@ -11,7 +12,7 @@
 
 ## TEST #1
 
-1.- Multiply two number without using "*"
+1.- Multiply two number without using "\*"
 
 2.- Find the biggest value of an array using just one line by iterating of code
 
@@ -28,21 +29,27 @@
 ## TEST #2
 
 1.- Create an object with a "hello" method that write "Hello <name>" in the console
-  
+
 2.- How would you make the <name> inmutable?
-  
+
 3.- Write a function that logs the 5 cities that occur the most in the array below
-  
+
 in order from the most number of occurrences to least.
 
 ## TEST #3
-  
+
 1.- FIZZBUZZ function for numbers from 1 to 100
 
 ## TEST #4
-  
+
 1.- String Reverse
-  
+
 2.- String Reverse using FOR LOOP
-  
-3.- Find the factorial value of a number  using a "recursive function"
+
+3.- Find the factorial value of a number using a "recursive function"
+
+4.- Find the factorial value of a number using a "for loop"
+
+5.- Find repeated elements in an Array
+
+6.- Find the coins needed to give change

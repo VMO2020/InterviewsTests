@@ -139,6 +139,7 @@ const flattenResult2 = flatten(flattenResult);
 console.log('Result: ', flattenResult2);
 
 // TEST:
+// Arrays cannot be compared, transform to JSON to be able to compare the Arrays
 JSON.stringify(expectedResult5) == JSON.stringify(flattenResult2)
 	? console.log(`%c TEST PASS`, 'color:green; font-weight:bold;')
 	: console.log(`%c TEST FAIL`, 'color:red; font-weight:bold;');
@@ -188,6 +189,7 @@ const wordResult = wordsArray.reduce((acc, val) =>
 console.log('Result', wordResult);
 
 // TEST:
+// Arrays cannot be compared, transform to JSON to be able to compare the Arrays
 JSON.stringify(expectedResult6) == JSON.stringify(wordResult)
 	? console.log(`%c TEST PASS`, 'color:green; font-weight:bold;')
 	: console.log(`%c TEST FAIL`, 'color:red; font-weight:bold;');
