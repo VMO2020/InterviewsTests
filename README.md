@@ -53,3 +53,7 @@ in order from the most number of occurrences to least.
 5.- Find repeated elements in an Array
 
 6.- Find the coins needed to give change
+
+## TEST #5
+
+1.- Generates a random color, which is displayed on the console
