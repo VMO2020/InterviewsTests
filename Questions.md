@@ -1,6 +1,6 @@
 ## Some questions for web developers in the UK
 
-# 1.- What mean Object oriented programming in js?
+# 1.- What mean object oriented programming in js?
 
 1a.- Object-Oriented Programming is a way of writing code that allows you to create different objects from a common object (Class).
 
@@ -10,7 +10,7 @@ The common object is usually called a Blueprint while the created objects are ca
 
 1c.- The third aspect of Object Oriented Programming is about encapsulation where you hide certain pieces of information within the object so they’re not accessible.
 
-# 2.- What is class in Javascript?
+# 2.- What is "class" in Javascript?
 
 JavaScript Classes are templates for JavaScript Objects. Classes are used to create objects.
 
@@ -20,7 +20,7 @@ In object-oriented programming, a class is an extensible program-code-template f
 
 An object is a collection of properties and methods (functions). A property is an association between a name (or key) and a value.
 
-# 4.- What are the benefits of using SASS over CSS?
+# 4.- What are the benefits of using SASS over pure CSS?
 
 SASS is like CSS but with superpowers.
 
@@ -67,3 +67,11 @@ document.getElementById("myBtn").addEventListener("click", displayDate);
 Whit the HTML DOM (Document Object Model), JavaScript can access and change all the elements of an HTML document.
 
 Can change all the HTML elements in the page, HTML attributes in the page, CSS styles in the page, remove existing HTML elements and attributes, add new HTML elements and attributes, react to all existing HTML events in the page and create new HTML events in the page.
+
+# 9.- What is REACT JS?
+
+A JavaScript library for building user interfaces made by Facebook. It is a component based library, that manage their own state, then compose them to make complex UIs.
+
+React makes it painless to create interactive user interfaces. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.
+
+Declarative views make your code more predictable and easier to debug.
