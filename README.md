@@ -1,4 +1,4 @@
-# Javascript skill test Interview for Frontend Web Developer
+# Javascript skill test Interview and Questions for Frontend Web Developer
 
 ## Some Javascript TEST Included
 
