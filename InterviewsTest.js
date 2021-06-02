@@ -119,6 +119,7 @@ const flattenResult = flatten(arrayData4);
 console.log('Result: ', flattenResult);
 
 // TEST:
+// Arrays cannot be compared, transform to JSON to be able to compare the Arrays
 JSON.stringify(expectedResult4) == JSON.stringify(flattenResult)
 	? console.log(`%c TEST PASS`, 'color:green; font-weight:bold;')
 	: console.log(`%c TEST FAIL`, 'color:red; font-weight:bold;');

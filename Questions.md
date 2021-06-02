@@ -75,3 +75,70 @@ A JavaScript library for building user interfaces made by Facebook. It is a comp
 React makes it painless to create interactive user interfaces. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.
 
 Declarative views make your code more predictable and easier to debug.
+
+# 10.- List of basic Data Structures:
+
+- LINKED LISTS "{}": is a linear data structure similar to an array. However, unlike arrays, elements (commonly called nodes) are not stored in a particular memory location or index. Rather each element is a separate object that contains a value and a pointer (link to the next object in that list). The first node name is HEAD, and the last node name is TAIL.
+
+GOOD: For Add and Delete items
+
+BAD: For Retrieve or Search items
+
+- ARRAYS "[]": JavaScript arrays are used to store multiple values in a single variable. JavaScript variables can be objects or others arrays.
+
+GOOD:
+For Retrieve items.
+You can use index number (arr[#]), because elements are stored in a particular memory location or index.
+
+BAD:
+For Add new items (sometimes)
+Arrays cannot be compared, transform to JSON to be able to compare the Arrays
+
+- HASH TABLE: A hash table (also called a hash, hash map, unordered map or dictionary) is a data structure that pairs keys to values. Its a technique to convert a range of key values into a range of indexes of an array.
+
+GOD: For Add, Retrieve and Delete items
+
+BAD: Key collisions
+
+- STACK + QUEUE: In computer science, a stack is a linear data structure, that use constructors. We need to define methods that can add (push) and remove (pop) data from a stack.What happens if we want to remove the oldest data? We want to use a data structure named queue. Similar to a stack, a queue is a linear data structure. A stack stores data in sequential order and removes the most recently added data; a queue stores data in sequential order but removes the oldest added data.
+
+Stack: Last in => First out (method: .push(1) .pop())
+Queue: First in => First out (method: .enqueue(1) . dequeue())
+
+GOOD:
+efficient add + remove
+A stack to remove the most recently added data.
+Queue to remove the oldest added data.
+
+BAD:
+Limited uses cases
+
+- GRAPHS & TREES: A graph is a data structure where a node can have zero or more adjacent elements. The connection between two nodes is called edge. Nodes can also be called vertices.
+
+Graphs have many real-world applications like: Electronic circuits, Driving directions, Social networks, Recommendations: Amazon/Netflix uses graphs to make suggestion, etc.
+
+There are two primary ways of representing a graph:
+
+Adjacency list: a -> { a b }, b -> { c }, c -> { d }, d -> { b c }
+
+Adjacency Matrix:
+
+a b c d e
+
+a 1 1 - - -
+
+b - - 1 - -
+
+c - - - 1 -
+
+d - 1 1 - -
+
+A tree is a data structure where a node can have zero or more children. Each node contains a value. Like graphs, the connection between nodes is called edges. A tree is a type of graph, but not all graphs are trees.
+
+- BINARY TRESS: Binary search tree: node have only 0 or 2 children (but never 1), children on the left < node and children on the right > node. The HTML DOM uses a tree data structure to represents the hierarchy of elements.
+
+GOOD:
+They are used on databases to perform quick searches
+
+BAD:
+Can be easily unbalanced
