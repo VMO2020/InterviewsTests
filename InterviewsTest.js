@@ -1,7 +1,7 @@
 // Interviews based on the HOLA MUNDO youtube channel
 // https://www.youtube.com/channel/UC4FHiPgS1KXkUMx3dxBUtPg
 // My own scheme of solution
-
+//
 console.log(`%c TEST #1`, 'font-weight:bold; font-size:24px;');
 console.log('1.--------------');
 // 1.- Multiply two number without using "*" --------------------------------
@@ -35,7 +35,7 @@ console.log('Result: ', multiplyResult);
 // TEST:
 expectedResult === multiplyResult
 	? console.log(`%c TEST PASS`, 'color:green; font-weight:bold;')
-	: console.log(`%c TEST FAIL`, 'color:red; font-weight:bold;');
+	: console.error(`%c TEST FAIL`, 'color:red; font-weight:bold;');
 
 console.log('2.--------------');
 
@@ -62,7 +62,7 @@ console.log('Result: ', biggestResult);
 // TEST:
 expectedResult2 === biggestResult
 	? console.log(`%c TEST PASS`, 'color:green; font-weight:bold;')
-	: console.log(`%c TEST FAIL`, 'color:red; font-weight:bold;');
+	: console.error(`%c TEST FAIL`, 'color:red; font-weight:bold;');
 
 console.log('3.--------------');
 
@@ -93,9 +93,9 @@ console.log('Result: ', cleanResult);
 
 // TEST:
 // Arrays cannot be compared, transform to JSON to be able to compare the Arrays
-JSON.stringify(expectedResult3) == JSON.stringify(cleanResult)
+JSON.stringify(expectedResult3) === JSON.stringify(cleanResult)
 	? console.log(`%c TEST PASS`, 'color:green; font-weight:bold;')
-	: console.log(`%c TEST FAIL`, 'color:red; font-weight:bold;');
+	: console.error(`%c TEST FAIL`, 'color:red; font-weight:bold;');
 
 console.log('4.--------------');
 
@@ -120,9 +120,9 @@ console.log('Result: ', flattenResult);
 
 // TEST:
 // Arrays cannot be compared, transform to JSON to be able to compare the Arrays
-JSON.stringify(expectedResult4) == JSON.stringify(flattenResult)
+JSON.stringify(expectedResult4) === JSON.stringify(flattenResult)
 	? console.log(`%c TEST PASS`, 'color:green; font-weight:bold;')
-	: console.log(`%c TEST FAIL`, 'color:red; font-weight:bold;');
+	: console.error(`%c TEST FAIL`, 'color:red; font-weight:bold;');
 
 console.log('5.--------------');
 
@@ -141,9 +141,9 @@ console.log('Result: ', flattenResult2);
 
 // TEST:
 // Arrays cannot be compared, transform to JSON to be able to compare the Arrays
-JSON.stringify(expectedResult5) == JSON.stringify(flattenResult2)
+JSON.stringify(expectedResult5) === JSON.stringify(flattenResult2)
 	? console.log(`%c TEST PASS`, 'color:green; font-weight:bold;')
-	: console.log(`%c TEST FAIL`, 'color:red; font-weight:bold;');
+	: console.error(`%c TEST FAIL`, 'color:red; font-weight:bold;');
 
 console.log('6.--------------');
 
@@ -191,9 +191,9 @@ console.log('Result', wordResult);
 
 // TEST:
 // Arrays cannot be compared, transform to JSON to be able to compare the Arrays
-JSON.stringify(expectedResult6) == JSON.stringify(wordResult)
+JSON.stringify(expectedResult6) === JSON.stringify(wordResult)
 	? console.log(`%c TEST PASS`, 'color:green; font-weight:bold;')
-	: console.log(`%c TEST FAIL`, 'color:red; font-weight:bold;');
+	: console.error(`%c TEST FAIL`, 'color:red; font-weight:bold;');
 
 console.log('7.--------------');
 // 7.- Palindrome: Verify a word, phrase, or sequence that reads the same backwards as forwards
@@ -229,6 +229,6 @@ const joinTXT = reverseTXT.join('');
 console.log('Step5 join: ', joinTXT);
 
 // TEST:
-lowerTXT == joinTXT
+lowerTXT === joinTXT
 	? console.log(`%c TEST PASS`, 'color:green; font-weight:bold;')
-	: console.log(`%c TEST FAIL`, 'color:red; font-weight:bold;');
+	: console.error(`%c TEST FAIL`, 'color:red; font-weight:bold;');

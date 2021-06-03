@@ -4,7 +4,7 @@ console.log(`%c TEST #3`, 'font-weight:bold; font-size:24px;');
 // multiple of 3, log Fizz
 // multiple of 5, log Buzz
 // multiple of both, log FizzBuzz
-
+//
 function fizzbuzz(num) {
 	for (let i = 1; i <= num; i++) {
 		let message = '';

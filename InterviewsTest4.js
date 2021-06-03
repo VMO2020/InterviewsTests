@@ -1,6 +1,6 @@
 // Interviews based on the CodigoMentor youtube channel
 // My own scheme of solution
-
+//
 console.log(`%c TEST #4`, 'font-weight:bold; font-size:24px;');
 console.log('1.--------------');
 // 1.- String Reverse
@@ -32,7 +32,7 @@ console.log('Step3 Result: ', result);
 //TEST:
 expectedTest4 === result
 	? console.log(`%c TEST PASS`, 'color:green; font-weight:bold;')
-	: console.log(`%c TEST FAIL`, 'color:red; font-weight:bold;');
+	: console.error(`%c TEST FAIL`, 'color:red; font-weight:bold;');
 
 console.log('2.--------------');
 
@@ -63,7 +63,7 @@ console.log('Result: ', resultFOR);
 // //TEST:
 expectedFOR === resultFOR
 	? console.log(`%c TEST PASS`, 'color:green; font-weight:bold;')
-	: console.log(`%c TEST FAIL`, 'color:red; font-weight:bold;');
+	: console.error(`%c TEST FAIL`, 'color:red; font-weight:bold;');
 
 console.log('3.--------------');
 
@@ -96,7 +96,7 @@ console.log('Result: ', resultFactorial);
 // TEST:
 factorialExpected === resultFactorial
 	? console.log(`%c TEST PASS`, 'color:green; font-weight:bold;')
-	: console.log(`%c TEST FAIL`, 'color:red; font-weight:bold;');
+	: console.error(`%c TEST FAIL`, 'color:red; font-weight:bold;');
 
 console.log('4.--------------');
 
@@ -127,7 +127,7 @@ console.log('Result: ', resultFactorial2);
 // TEST:
 factorialExpected === resultFactorial2
 	? console.log(`%c TEST PASS`, 'color:green; font-weight:bold;')
-	: console.log(`%c TEST FAIL`, 'color:red; font-weight:bold;');
+	: console.error(`%c TEST FAIL`, 'color:red; font-weight:bold;');
 
 console.log('5.--------------');
 // 5.- Find repeated elements in an Array
@@ -163,7 +163,7 @@ console.log('Result: ', repeatedResult);
 // Arrays cannot be compared, transform to JSON to be able to compare the Arrays
 JSON.stringify(repeatedExpected) === JSON.stringify(repeatedResult)
 	? console.log(`%c TEST PASS`, 'color:green; font-weight:bold;')
-	: console.log(`%c TEST FAIL`, 'color:red; font-weight:bold;');
+	: console.error(`%c TEST FAIL`, 'color:red; font-weight:bold;');
 
 console.log('6.--------------');
 // 6.- Find the coins needed to give change
