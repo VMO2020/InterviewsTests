@@ -57,3 +57,5 @@ in order from the most number of occurrences to least.
 ## TEST #5
 
 1.- Generates a random color, which is displayed on the console
+
+2.- Creates a square of "\*", using custom size
