@@ -154,3 +154,39 @@ Binary search tree: node have only 0 or 2 children (but never 1), children on th
 
 - BAD:
   Can be easily unbalanced
+
+# 11.- Flexbox properties:
+
+flex: flex-grow flex-shrink flex-basis;
+
+Default value: 0 1 auto.
+
+- What is flex-grow?
+
+flex-grow: number|initial|inherit;
+
+This property specifies how much of the remaining space in the flex container should be assigned to the item (the flex grow factor). The remaining space is the size of the flex container minus the size of all flex items' sizes together.
+
+Default value: "0".
+
+flex-grow: 3 => flex-item grow three times wider than the rest.
+
+- What is flex-shrink?
+
+flex-shrink: number|initial|inherit;
+
+The flex-shrink property specifies how the item will shrink relative to the rest of the flexible items inside the same container.
+
+Default value: "1".
+
+flex-shrink: 3 => shrink three times more than the rest
+
+- What is flex-basis?
+
+flex-basis: number|auto|initial|inherit;
+
+The flex-basis property specifies a length unit, or percentage, specifying the initial length of the flexible item(s).
+
+Legal values: "auto", "inherit", or a number followed by "%", "px", "em" or any other length unit
+
+Default value: "auto"
