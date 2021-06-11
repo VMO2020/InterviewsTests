@@ -16,7 +16,9 @@ React has its components divided into 3 phases — Mounting, updating, and unmou
 
 - useState(): It is used to update the state. It returns a pair: the current state value and a function that lets you update it.
 
+```
 const [state, setState] = useState(Initial Values);
+```
 
 - useEffect(): It serves the same purpose as componentDidMount, componentDidUpdate, componentWillUnmount in React classes. It will update only when the dependencies change.
 
@@ -77,7 +79,7 @@ If some component in one of these UI areas crashes, the rest of them remain inte
 
 ## 7.- Best Lifecycle Method for making API calls?
 
-componentDidMount for class components.
+- componentDidMount for class components.
 
 - useEffect(): This hook serves the same purpose as componentDidMount
 
@@ -115,7 +117,7 @@ Is a styling technique (inline css) where JavaScript is used to style components
 
 Mutating state directly can lead to odd bugs, and components that are hard to optimize. This will disrupt all the React's Lifecycle Methods. As a result, your app will behave abnormal or even crash.
 
-useState centralizes the state of a component in one place.
+- useState centralizes the state of a component in one place.
 
 ## 12.- How many ways you can conditionally render in react?
 
@@ -133,13 +135,15 @@ useState centralizes the state of a component in one place.
 
 ## 13.- What is Fragments and why do we use it?
 
-Fragments let you group a list of children without adding extra nodes to the DOM.
+- Fragments let you group a list of children without adding extra nodes to the DOM.
 
-Why?: It’s a tiny bit faster and has less memory usage (no need to create an extra DOM node).
+- Why?: It’s a tiny bit faster and has less memory usage (no need to create an extra DOM node).
 
 ## 14.- How to do code-splitting in react?
 
-The best way to introduce code-splitting into your app is through the dynamic import() syntax, using React.lazy() and Suspense wrapper (lazy-load).
+The best way to introduce code-splitting into your app is through the dynamic import() syntax:
+
+- using React.lazy() and Suspense wrapper (lazy-load).
 
 You can create multiple bundles that can be dynamically loaded at runtime, can dramatically improve the performance of your app, avoided loading code that the user may never need, and reduced the amount of code needed during the initial load.
 
@@ -163,10 +167,12 @@ People use Redux middleware for logging, crash reporting, talking to an asynchro
 
 A thunk is a function that acts as a wrapper in that it wraps an expression to delay its evaluation.
 
-Actually, Both of them are middleware for Redux to deal with "asynchronous actions". Thunk allows "Promises" and Saga use "Generators".
+Actually, Both of them are middleware for Redux to deal with "asynchronous actions".
 
-- Redux-Thunk:
-  Less boilerplate code, Easy to understand but may be difficult to scale up and difficult to test.
+- Thunk allows "Promises"
+- Saga use "Generators".
+
+Redux-Thunk: Less boilerplate code, Easy to understand but may be difficult to scale up and difficult to test.
 
 ## 18.- What is CRUD?
 
