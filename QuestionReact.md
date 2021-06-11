@@ -14,11 +14,11 @@ JSX (short for JavaScript eXtension) is a React extension that makes it easy for
 
 React has its components divided into 3 phases — Mounting, updating, and unmounting.
 
-useState(): It is used to update the state. It returns a pair: the current state value and a function that lets you update it.
+- useState(): It is used to update the state. It returns a pair: the current state value and a function that lets you update it.
 
 const [state, setState] = useState(Initial Values);
 
-useEffect(): It serves the same purpose as componentDidMount, componentDidUpdate, componentWillUnmount in React classes. It will update only when the dependencies change.
+- useEffect(): It serves the same purpose as componentDidMount, componentDidUpdate, componentWillUnmount in React classes. It will update only when the dependencies change.
 
 ```
 useEffect(() => {
