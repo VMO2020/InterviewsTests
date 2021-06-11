@@ -19,3 +19,61 @@ function fizzbuzz(num) {
 }
 
 fizzbuzz(50);
+
+console.log('2.--------------');
+// 2.- Find the first non repeating character in an Array
+// "aaabcccdeeef" => "b"
+// "abcbad" => "c"
+// "abcabcabc" => "_"
+
+// DATA:
+const arrayDat2 = 'aaabcccdeeef';
+// const arrayData2 = 'abcbad';
+// const arrayData2 = 'abcabcabc';
+
+// EXPECTED
+const expected2 = 'b';
+// const expected2 = 'c';
+// const expected2 = '_';
+console.log('Expected: ', expected2);
+
+// CODE
+const findNotRepeted = (array) => {
+	let result = '';
+	let resultCounter = {};
+	let resultFiltered = [];
+	// First Step: Split
+	const splited = array.split('');
+	console.log('Letter splitted: ', splited);
+	// Second Step: count using map
+	splited.map((letter) => {
+		resultCounter[letter] = !resultCounter[letter]
+			? 1
+			: (resultCounter[letter] += 1);
+	});
+	console.log('Repeted counter: ', resultCounter);
+	// Third Step: filter using map (Transform to an array)
+	Object.entries(resultCounter).map((letter) => {
+		// console.log(letter);
+		letter[1] === 1 && resultFiltered.push(letter);
+	});
+
+	// Four step: Add '_' at the end of the array
+	resultFiltered.push('_');
+	console.log('ResultFiltered: ', resultFiltered);
+
+	// Fifth step: Result (First key of the array)
+	result = resultFiltered[0][0];
+
+	console.log('Result: ', result);
+
+	return result;
+};
+
+const result2 = findNotRepeted(arrayDat2);
+// console.log(result2);
+
+// TEST
+expected2 === result2
+	? console.log(`%c TEST PASS`, 'color:green; font-weight:bold;')
+	: console.error(`%c TEST FAIL`, 'color:red; font-weight:bold;');

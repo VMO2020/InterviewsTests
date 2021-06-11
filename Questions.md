@@ -167,9 +167,9 @@ flex-grow: number|initial|inherit;
 
 This property specifies how much of the remaining space in the flex container should be assigned to the item (the flex grow factor). The remaining space is the size of the flex container minus the size of all flex items' sizes together.
 
-Default value: "0".
+Default value: "0" (width fixed - no stretching).
 
-flex-grow: 3 => flex-item grow three times wider than the rest.
+flex-grow: 3; => flex-item grow three times wider than the rest.
 
 - What is flex-shrink?
 
@@ -179,7 +179,7 @@ The flex-shrink property specifies how the item will shrink relative to the rest
 
 Default value: "1".
 
-flex-shrink: 3 => shrink three times more than the rest
+flex-shrink: 3; => shrink (less wide) three times more than the rest
 
 - What is flex-basis?
 
@@ -190,3 +190,5 @@ The flex-basis property specifies a length unit, or percentage, specifying the i
 Legal values: "auto", "inherit", or a number followed by "%", "px", "em" or any other length unit
 
 Default value: "auto"
+
+flex-basis: 200px; => Initial width= 200px;
