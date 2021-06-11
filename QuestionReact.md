@@ -176,7 +176,7 @@ Redux-Thunk: Less boilerplate code, Easy to understand but may be difficult to s
 
 ## 18.- What is CRUD?
 
-(create, read, update and delete) application.
+CRUD (create, read, update and delete) application.
 
 ## 19.- How to optimize a React app?
 
