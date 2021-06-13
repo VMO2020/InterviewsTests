@@ -3,7 +3,7 @@
 // My own scheme of solution
 //
 console.log(`%c TEST #1`, 'font-weight:bold; font-size:24px;');
-console.log('1.--------------');
+console.log('1.------Multiply--------');
 // 1.- Multiply two number without using "*" --------------------------------
 // DATA:
 const a = 50;
@@ -37,7 +37,7 @@ expectedResult === multiplyResult
 	? console.log(`%c TEST PASS`, 'color:green; font-weight:bold;')
 	: console.error(`%c TEST FAIL`, 'color:red; font-weight:bold;');
 
-console.log('2.--------------');
+console.log('2.-------Biggest-------');
 
 // 2.- Find the biggest value of an array using just one line by iterating of code ------------
 
@@ -64,7 +64,7 @@ expectedResult2 === biggestResult
 	? console.log(`%c TEST PASS`, 'color:green; font-weight:bold;')
 	: console.error(`%c TEST FAIL`, 'color:red; font-weight:bold;');
 
-console.log('3.--------------');
+console.log('3.-------New Array-------');
 
 // 3.- Build a new array without undefined, null or 0 values
 
@@ -97,7 +97,7 @@ JSON.stringify(expectedResult3) === JSON.stringify(cleanResult)
 	? console.log(`%c TEST PASS`, 'color:green; font-weight:bold;')
 	: console.error(`%c TEST FAIL`, 'color:red; font-weight:bold;');
 
-console.log('4.--------------');
+console.log('4.-------Flatten-------');
 
 // 4.- Flatten an array one level ----------------------------------------------------------
 
@@ -124,7 +124,7 @@ JSON.stringify(expectedResult4) === JSON.stringify(flattenResult)
 	? console.log(`%c TEST PASS`, 'color:green; font-weight:bold;')
 	: console.error(`%c TEST FAIL`, 'color:red; font-weight:bold;');
 
-console.log('5.--------------');
+console.log('5.------Flatten2--------');
 
 // 5.- Flatten past array another level ----------------------------------------------------------
 
@@ -145,7 +145,7 @@ JSON.stringify(expectedResult5) === JSON.stringify(flattenResult2)
 	? console.log(`%c TEST PASS`, 'color:green; font-weight:bold;')
 	: console.error(`%c TEST FAIL`, 'color:red; font-weight:bold;');
 
-console.log('6.--------------');
+console.log('6.-------Counter-------');
 
 // 6.- Write a function that counts a most repeated word in array --------------------
 
@@ -195,12 +195,12 @@ JSON.stringify(expectedResult6) === JSON.stringify(wordResult)
 	? console.log(`%c TEST PASS`, 'color:green; font-weight:bold;')
 	: console.error(`%c TEST FAIL`, 'color:red; font-weight:bold;');
 
-console.log('7.--------------');
+console.log('7.-------Palindrome-------');
 // 7.- Palindrome: Verify a word, phrase, or sequence that reads the same backwards as forwards
 
 // DATA:
 const arrayData7 = 'Do geese see God';
-const arrayData7b = 'palabras que no son palindromos';
+const arrayData7b = 'words that are not palindromes';
 console.log('Data: ', arrayData7);
 
 // EXPECTED:

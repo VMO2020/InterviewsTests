@@ -2,7 +2,7 @@
 // https://www.youtube.com/channel/UCJgGc8pQO1lv04VXrBxA_Hg
 //
 console.log(`%c TEST #2`, 'font-weight:bold; font-size:24px;');
-console.log('1.--------------');
+console.log('1.-------Create an object-------');
 // 1.- Create an object with a "hello" method that write "Hello <name>" in the console
 
 const myObject = {
@@ -14,7 +14,7 @@ const myObject = {
 
 myObject.hello();
 
-console.log('2.--------------');
+console.log('2.-------Inmutable-------');
 // 2.- How would you make the <name> inmutable?
 // Using Object.freeze(obj);
 
@@ -28,7 +28,7 @@ Object.freeze(myObject);
 myObject.name = 'Pedro'; // log: Hello Alex
 myObject.hello();
 
-console.log('3.--------------');
+console.log('3.-------Occur the most-------');
 // 3.- Write a function that logs the 5 cities that occur the most in the array below
 // in order from the most number of occurrences to least.
 

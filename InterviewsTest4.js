@@ -2,7 +2,7 @@
 // My own scheme of solution
 //
 console.log(`%c TEST #4`, 'font-weight:bold; font-size:24px;');
-console.log('1.--------------');
+console.log('1.-------String Reverse-------');
 // 1.- String Reverse
 // DATA:
 const str = 'alexander';
@@ -34,7 +34,7 @@ expectedTest4 === result
 	? console.log(`%c TEST PASS`, 'color:green; font-weight:bold;')
 	: console.error(`%c TEST FAIL`, 'color:red; font-weight:bold;');
 
-console.log('2.--------------');
+console.log('2.-------String Reverse FOR LOOP-------');
 
 // 2.- String Reverse using FOR LOOP
 // DATA:
@@ -65,7 +65,7 @@ expectedFOR === resultFOR
 	? console.log(`%c TEST PASS`, 'color:green; font-weight:bold;')
 	: console.error(`%c TEST FAIL`, 'color:red; font-weight:bold;');
 
-console.log('3.--------------');
+console.log('3.-------Factorial-------');
 
 // 3.- Find the factorial value of a number  using a "recursive function"
 // 5! = 5 x 4 x 3 x 2 x 1 => 120
@@ -98,7 +98,7 @@ factorialExpected === resultFactorial
 	? console.log(`%c TEST PASS`, 'color:green; font-weight:bold;')
 	: console.error(`%c TEST FAIL`, 'color:red; font-weight:bold;');
 
-console.log('4.--------------');
+console.log('4.-------Factorial for loop-------');
 
 // 4.- Find the factorial value of a number  using a "for loop"
 
@@ -129,7 +129,7 @@ factorialExpected === resultFactorial2
 	? console.log(`%c TEST PASS`, 'color:green; font-weight:bold;')
 	: console.error(`%c TEST FAIL`, 'color:red; font-weight:bold;');
 
-console.log('5.--------------');
+console.log('5.-------Repeated-------');
 // 5.- Find repeated elements in an Array
 // DATA:
 const ArrayRep = [2, 4, 5, 4, 7, 9, 5];
@@ -165,7 +165,7 @@ JSON.stringify(repeatedExpected) === JSON.stringify(repeatedResult)
 	? console.log(`%c TEST PASS`, 'color:green; font-weight:bold;')
 	: console.error(`%c TEST FAIL`, 'color:red; font-weight:bold;');
 
-console.log('6.--------------');
+console.log('6.-------Coins-------');
 // 6.- Find the coins needed to give change
 // DATA:
 // 25 cents coin

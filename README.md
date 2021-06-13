@@ -40,6 +40,10 @@ in order from the most number of occurrences to least.
 
 1.- FIZZBUZZ function for numbers from 1 to 100
 
+2.- Find the first non repeating character in an Array (Amazon Test)
+
+3.- Find the first Duplicate (Google Test)
+
 ## TEST #4
 
 1.- String Reverse
